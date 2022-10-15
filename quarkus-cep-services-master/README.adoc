@@ -1,32 +1,7 @@
-:numbered:
-:icons: font
-ifdef::env-github[]
-:outfilesuffix: .adoc
-:caution-caption: :fire:
-:important-caption: :exclamation:
-:note-caption: :paperclip:
-:tip-caption: :bulb:
-:warning-caption: :warning:
-endif::[]
+Inclua um cliente para o serviço de consulta de CEP Widenet, definindo a classe criada como padrão para injeção no serviço REST criado. O link a seguir mostra um exemplo de consulta a tal API.
 
-= Consumo de Serviços de CEP com framework Quarkus image:https://github.com/manoelcampos/quarkus-cep-services/workflows/maven/badge.svg[]
+Foi criada a classe WidnetCepService
 
-NOTE: Vídeo: https://youtu.be/7CsjuCsMjo0[#1 Introdução à INJEÇÃO de DEPENDÊNCIAS com CDI e o framework QUARKUS em JAVA]
+no seguinte link
 
-Esta é a primeira versão da aplicação que mostra como utilizar uma anotação de escopo
-(como `@Dependent`, `@RequestScoped`, `@SessionScoped` ou `@ApplicationScoped`)
-para definir qual classe de serviço de CEP será instanciada quando for utilizada
-injeção de dependência ao executar um código como `@Inject CepService cepService`.
-
-== Executar o Projeto
-
-Você pode iniciar o servidor clicando no botão play do seu IDE ou digitando o comando abaixo
-no terminal, dentro da pasta raiz do projeto:
-
-```bash
-mvn compile quarkus:dev
-```
-
-== Testando a aplicação online
-
-A aplicação está disponível online https://quarkus-cep-services.herokuapp.com/[aqui].
+https://github.com/casp2009/AtividadeCEP-Widenet/blob/main/quarkus-cep-services-master/src/main/java/com/manoelcampos/cepservice/WidnetCepService.java
